@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <meta name="Generator" content="EditPlus®">
+  <meta name="Author" content="">
+  <meta name="Keywords" content="">
+  <meta name="Description" content="">
+  <script src="D:\\angular.min.js"></script>
+  <title>Document</title>
+ </head>
+ <body>
+	<div ng-app="myApp" ng-controller="myCtrl">
+	First Name:<input type="text" ng-model="firstName"><br>
+	Last Name:<input type="text" ng-model="lastName"><br>
+	Full Name:{{firstName+" "+lastName}}
+	</div>
+	<script>
+		var app=angular.module("myApp",[]);
+		app.controller("myCtrl",function($scope){
+			$scope.firstName="john";
+			$scope.lastName="doe";})
+			</script>
+
+ </body>
+</html>
